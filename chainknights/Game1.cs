@@ -97,12 +97,8 @@ namespace chainknights
         {
             float dtime = gameTime.ElapsedGameTime.Milliseconds * 0.001f;
 
-            // Allows the game to exit
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                this.Exit();
+            knight.Update(dtime, input);
 
-
-            // TODO: Add your update logic here
             physicsSimulator.Update(dtime);
             camera.Update(input);
             input.Update();
