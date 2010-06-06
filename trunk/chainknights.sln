@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chainknights", "chainknights\chainknights.csproj", "{9BB1775D-C0A7-4E54-A1D0-ACFE54E11DD7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{BC025747-994F-4D8E-ABA9-4D5DE8468A39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarseerPhysicsXNA", "Farseer Physics 2.1.3 XNA\FarseerPhysicsXNA.csproj", "{3CA74E02-3210-4BF8-85E9-024E9AD6F18D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,6 +19,18 @@ Global
 		{9BB1775D-C0A7-4E54-A1D0-ACFE54E11DD7}.Release|x86.Build.0 = Release|x86
 		{F639B870-76B1-47F7-9717-E8B5ADC648FE}.Debug|x86.ActiveCfg = Debug|x86
 		{F639B870-76B1-47F7-9717-E8B5ADC648FE}.Release|x86.ActiveCfg = Release|x86
+		{BC025747-994F-4D8E-ABA9-4D5DE8468A39}.Debug|x86.ActiveCfg = Debug|x86
+		{BC025747-994F-4D8E-ABA9-4D5DE8468A39}.Debug|x86.Build.0 = Debug|x86
+		{BC025747-994F-4D8E-ABA9-4D5DE8468A39}.Release|x86.ActiveCfg = Release|x86
+		{BC025747-994F-4D8E-ABA9-4D5DE8468A39}.Release|x86.Build.0 = Release|x86
+		{DDDCEFE1-0024-4538-AD67-086ED0437678}.Debug|x86.ActiveCfg = Debug|x86
+		{DDDCEFE1-0024-4538-AD67-086ED0437678}.Release|x86.ActiveCfg = Release|x86
+		{3CA74E02-3210-4BF8-85E9-024E9AD6F18D}.Debug|x86.ActiveCfg = Debug|x86
+		{3CA74E02-3210-4BF8-85E9-024E9AD6F18D}.Debug|x86.Build.0 = Debug|x86
+		{3CA74E02-3210-4BF8-85E9-024E9AD6F18D}.Release|x86.ActiveCfg = Release|x86
+		{3CA74E02-3210-4BF8-85E9-024E9AD6F18D}.Release|x86.Build.0 = Release|x86
+		{5DB75E98-A054-4091-AB49-F5DB0F17F771}.Debug|x86.ActiveCfg = Debug|x86
+		{5DB75E98-A054-4091-AB49-F5DB0F17F771}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
