@@ -102,6 +102,7 @@ namespace chainknights
             physicsSimulator.Update(dtime);
             camera.Update(input);
             input.Update();
+
             base.Update(gameTime);
         }
 
