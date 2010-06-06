@@ -10,6 +10,12 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Net;
 using Microsoft.Xna.Framework.Storage;
+using FarseerGames.FarseerPhysics;
+using FarseerGames.FarseerPhysics.Dynamics;
+
+using Common;
+using FarseerGames.FarseerPhysics.Factories;
+
 
 namespace chainknights
 {
@@ -18,8 +24,18 @@ namespace chainknights
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
+        PhysicsSimulator physicsSimulator = new PhysicsSimulator(new Vector2(0, 4000));
+        PhysicsSimulatorView psView;
+        InputHelper input = new InputHelper();
+        Camera2D camera;
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
+        Knight knight = new Knight();
+
+        Contraption level = new Contraption();
+
+        Body bodyCamera;
 
         public Game1()
         {
@@ -50,6 +66,17 @@ namespace chainknights
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            knight.LoadContent(physicsSimulator, Content);
+            level.Build("level.xml", physicsSimulator, Content);
+
+            bodyCamera = BodyFactory.Instance.CreateBody(physicsSimulator, 1f, 1f);
+            bodyCamera.IgnoreGravity = true;
+            camera = new Camera2D(new Vector2(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height));
+            camera.TrackingBody = bodyCamera;
+            camera.Zoom = .25f;
+
+            psView = new PhysicsSimulatorView(physicsSimulator);
+            psView.LoadContent(GraphicsDevice, Content);
         }
 
         /// <summary>
@@ -68,12 +95,17 @@ namespace chainknights
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            float dtime = gameTime.ElapsedGameTime.Milliseconds * 0.001f;
+
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            // TODO: Add your update logic here
 
+            // TODO: Add your update logic here
+            physicsSimulator.Update(dtime);
+            camera.Update(input);
+            input.Update();
             base.Update(gameTime);
         }
 
@@ -86,6 +118,12 @@ namespace chainknights
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            spriteBatch.Begin(SpriteBlendMode.AlphaBlend, SpriteSortMode.Immediate, SaveStateMode.None, camera.CameraMatrix);
+
+            level.Draw(spriteBatch);
+            knight.Draw(spriteBatch);
+
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }

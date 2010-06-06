@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Level_01" Visible="true">
+    <Layers>
+        <Layer Name="Textures" Visible="true">
+            <Items>
+                <Item xsi:type="TextureItem" Name="Texture_0080" Visible="true">
+                    <Position>
+                        <X>0</X>
+                        <Y>328</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body" Type="Item" Description="">b_body</Property>
+                    </CustomProperties>
+                    <Rotation>0</Rotation>
+                    <Scale>1</Scale>
+                    <TintColor>
+                        <R>255</R>
+                        <G>255</G>
+                        <B>255</B>
+                        <A>255</A>
+                        <PackedValue>4294967295</PackedValue>
+                    </TintColor>
+                    <FlipHorizontally>false</FlipHorizontally>
+                    <FlipVertically>false</FlipVertically>
+                    <texture_filename>Media\ChainKnights_LegsStanding_FULL.png</texture_filename>
+                    <asset_name>Media\ChainKnights_LegsStanding_FULL</asset_name>
+                    <Origin>
+                        <X>380</X>
+                        <Y>186</Y>
+                    </Origin>
+                </Item>
+                <Item xsi:type="TextureItem" Name="Texture_0079" Visible="true">
+                    <Position>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body" Type="Item" Description="">b_body</Property>
+                    </CustomProperties>
+                    <Rotation>0</Rotation>
+                    <Scale>1</Scale>
+                    <TintColor>
+                        <R>255</R>
+                        <G>255</G>
+                        <B>255</B>
+                        <A>255</A>
+                        <PackedValue>4294967295</PackedValue>
+                    </TintColor>
+                    <FlipHorizontally>false</FlipHorizontally>
+                    <FlipVertically>false</FlipVertically>
+                    <texture_filename>Media\ChainKnights_Torso_FULL.png</texture_filename>
+                    <asset_name>Media\ChainKnights_Torso_FULL</asset_name>
+                    <Origin>
+                        <X>286</X>
+                        <Y>306</Y>
+                    </Origin>
+                </Item>
+                <Item xsi:type="TextureItem" Name="Texture_0081" Visible="true">
+                    <Position>
+                        <X>0</X>
+                        <Y>-389</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body" Type="Item" Description="">b_body</Property>
+                    </CustomProperties>
+                    <Rotation>0</Rotation>
+                    <Scale>1</Scale>
+                    <TintColor>
+                        <R>255</R>
+                        <G>255</G>
+                        <B>255</B>
+                        <A>255</A>
+                        <PackedValue>4294967295</PackedValue>
+                    </TintColor>
+                    <FlipHorizontally>false</FlipHorizontally>
+                    <FlipVertically>false</FlipVertically>
+                    <texture_filename>Media\ChainKnights_Head04_FULL.png</texture_filename>
+                    <asset_name>Media\ChainKnights_Head04_FULL</asset_name>
+                    <Origin>
+                        <X>167</X>
+                        <Y>300</Y>
+                    </Origin>
+                </Item>
+            </Items>
+            <ScrollSpeed>
+                <X>1</X>
+                <Y>1</Y>
+            </ScrollSpeed>
+        </Layer>
+        <Layer Name="Joints" Visible="true">
+            <Items />
+            <ScrollSpeed>
+                <X>1</X>
+                <Y>1</Y>
+            </ScrollSpeed>
+        </Layer>
+        <Layer Name="Body" Visible="true">
+            <Items>
+                <Item xsi:type="CircleItem" Name="b_body" Visible="true">
+                    <Position>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Position>
+                    <CustomProperties />
+                    <Radius>267.0749</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+            </Items>
+            <ScrollSpeed>
+                <X>1</X>
+                <Y>1</Y>
+            </ScrollSpeed>
+        </Layer>
+        <Layer Name="Geom" Visible="true">
+            <Items>
+                <Item xsi:type="CircleItem" Name="g_torso" Visible="true">
+                    <Position>
+                        <X>2</X>
+                        <Y>10</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body" Type="Item" Description="">b_body</Property>
+                    </CustomProperties>
+                    <Radius>267.0749</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+                <Item xsi:type="RectangleItem" Name="g_legs" Visible="true">
+                    <Position>
+                        <X>-348</X>
+                        <Y>157</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body" Type="Item" Description="">b_body</Property>
+                    </CustomProperties>
+                    <Width>716</Width>
+                    <Height>346</Height>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+            </Items>
+            <ScrollSpeed>
+                <X>1</X>
+                <Y>1</Y>
+            </ScrollSpeed>
+        </Layer>
+    </Layers>
+    <CustomProperties />
+    <EditorRelated>
+        <NextItemNumber>90</NextItemNumber>
+        <ContentRootFolder>C:\chainknights\chainknights\Content</ContentRootFolder>
+        <CameraPosition>
+            <X>91.66685</X>
+            <Y>625.0013</Y>
+        </CameraPosition>
+    </EditorRelated>
+</Level>
