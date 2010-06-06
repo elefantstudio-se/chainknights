@@ -59,16 +59,16 @@ namespace chainknights
         public Vector2 Tangent = new Vector2();
         public Vector2 Normal = new Vector2();
 
-        public float JumpForce = 100000f;
-        public float WalkForce = 0f;
-        public float HopForce = 0f;
-        public float GlideForce = 0f;
-        public float StompForce = 0f;
+        public float JumpForce = 150000f;
+        public float WalkForce = 5000f;
+        public float GlideForce = 5000f;
+        public float HopForce = 25000f;
+
 
         public Knight()
         {
             timerLandable = new Timer();
-            timerLandable.Interval = 500;
+            timerLandable.Interval = 50;
             timerLandable.Elapsed += new ElapsedEventHandler(timerLandable_Elapsed);
         }
 
@@ -142,11 +142,19 @@ namespace chainknights
             timerLandable.Start();
         }
 
+        public void Hop()
+        {
+            LegState = LegStates.Leaping;
+            BodyTorso.ApplyForce(Normal * HopForce * -1);
+            IsLandable = false;
+            timerLandable.Start();
+        }
+
         public void HandleInput(InputHelper input)
         {
             if (IsGrounded)
             {
-                if (input.CurrentKeyboardState.IsKeyDown(KeyUp) && input.LastKeyboardState.IsKeyUp(KeyUp))
+                if (input.CurrentKeyboardState.IsKeyDown(KeyUp) && IsLandable)
                 {
                     Jump();
                 }
@@ -158,10 +166,28 @@ namespace chainknights
                 {
                     Stand();
                 }
+
+                if (input.CurrentKeyboardState.IsKeyDown(KeyLeft))
+                {
+                    BodyTorso.ApplyForce(Tangent * WalkForce * -1);
+                    Hop();
+                }
+                if (input.CurrentKeyboardState.IsKeyDown(KeyRight))
+                {
+                    BodyTorso.ApplyForce(Tangent * WalkForce);
+                    Hop();
+                }
             }
             else
             {
-
+                if (input.CurrentKeyboardState.IsKeyDown(KeyLeft))
+                {
+                    BodyTorso.ApplyForce(Tangent * GlideForce * -1);
+                }
+                if (input.CurrentKeyboardState.IsKeyDown(KeyRight))
+                {
+                    BodyTorso.ApplyForce(Tangent * GlideForce);
+                }
             }
         }
 
@@ -174,7 +200,7 @@ namespace chainknights
             Normal.X = -Tangent.Y;
             Normal.Y = Tangent.X;
 
-            if (LegState == LegStates.Leaping && BodyTorso.LinearVelocity.Y > 0)
+            if (LegState == LegStates.Leaping && BodyTorso.LinearVelocity.Y > 0 && IsLandable)
             {
                 LegState = LegStates.Squatting;
             }
