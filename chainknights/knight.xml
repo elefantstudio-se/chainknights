@@ -5,8 +5,8 @@
             <Items>
                 <Item xsi:type="TextureItem" Name="t_legs" Visible="true">
                     <Position>
-                        <X>0</X>
-                        <Y>328</Y>
+                        <X>-5</X>
+                        <Y>325</Y>
                     </Position>
                     <CustomProperties>
                         <Property Name="Body" Type="Item" Description="">b_body</Property>
@@ -31,8 +31,8 @@
                 </Item>
                 <Item xsi:type="TextureItem" Name="t_torso" Visible="true">
                     <Position>
-                        <X>0</X>
-                        <Y>0</Y>
+                        <X>-5</X>
+                        <Y>30</Y>
                     </Position>
                     <CustomProperties>
                         <Property Name="Body" Type="Item" Description="">b_body</Property>
@@ -55,10 +55,114 @@
                         <Y>306</Y>
                     </Origin>
                 </Item>
-                <Item xsi:type="TextureItem" Name="t_head" Visible="true">
+                <Item xsi:type="TextureItem" Name="t_rightbottom" Visible="true">
                     <Position>
                         <X>0</X>
-                        <Y>-389</Y>
+                        <Y>0</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body" Type="Item" Description="">b_body</Property>
+                    </CustomProperties>
+                    <Rotation>0</Rotation>
+                    <Scale>1</Scale>
+                    <TintColor>
+                        <R>255</R>
+                        <G>255</G>
+                        <B>255</B>
+                        <A>255</A>
+                        <PackedValue>4294967295</PackedValue>
+                    </TintColor>
+                    <FlipHorizontally>false</FlipHorizontally>
+                    <FlipVertically>false</FlipVertically>
+                    <texture_filename>Media\ChainKnights_Armor_LightLeather_1.png</texture_filename>
+                    <asset_name>Media\ChainKnights_Armor_LightLeather_1</asset_name>
+                    <Origin>
+                        <X>400</X>
+                        <Y>453</Y>
+                    </Origin>
+                </Item>
+                <Item xsi:type="TextureItem" Name="t_leftbottom" Visible="true">
+                    <Position>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body" Type="Item" Description="">b_body</Property>
+                    </CustomProperties>
+                    <Rotation>0</Rotation>
+                    <Scale>1</Scale>
+                    <TintColor>
+                        <R>255</R>
+                        <G>255</G>
+                        <B>255</B>
+                        <A>255</A>
+                        <PackedValue>4294967295</PackedValue>
+                    </TintColor>
+                    <FlipHorizontally>false</FlipHorizontally>
+                    <FlipVertically>false</FlipVertically>
+                    <texture_filename>Media\ChainKnights_Armor_LightLeather_2.png</texture_filename>
+                    <asset_name>Media\ChainKnights_Armor_LightLeather_2</asset_name>
+                    <Origin>
+                        <X>400</X>
+                        <Y>453</Y>
+                    </Origin>
+                </Item>
+                <Item xsi:type="TextureItem" Name="t_lefttop" Visible="true">
+                    <Position>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body" Type="Item" Description="">b_body</Property>
+                    </CustomProperties>
+                    <Rotation>0</Rotation>
+                    <Scale>1</Scale>
+                    <TintColor>
+                        <R>255</R>
+                        <G>255</G>
+                        <B>255</B>
+                        <A>255</A>
+                        <PackedValue>4294967295</PackedValue>
+                    </TintColor>
+                    <FlipHorizontally>false</FlipHorizontally>
+                    <FlipVertically>false</FlipVertically>
+                    <texture_filename>Media\ChainKnights_Armor_LightLeather_4.png</texture_filename>
+                    <asset_name>Media\ChainKnights_Armor_LightLeather_4</asset_name>
+                    <Origin>
+                        <X>400</X>
+                        <Y>453</Y>
+                    </Origin>
+                </Item>
+                <Item xsi:type="TextureItem" Name="t_righttop" Visible="true">
+                    <Position>
+                        <X>0</X>
+                        <Y>0</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body" Type="Item" Description="">b_body</Property>
+                    </CustomProperties>
+                    <Rotation>0</Rotation>
+                    <Scale>1</Scale>
+                    <TintColor>
+                        <R>255</R>
+                        <G>255</G>
+                        <B>255</B>
+                        <A>255</A>
+                        <PackedValue>4294967295</PackedValue>
+                    </TintColor>
+                    <FlipHorizontally>false</FlipHorizontally>
+                    <FlipVertically>false</FlipVertically>
+                    <texture_filename>Media\ChainKnights_Armor_LightLeather_3.png</texture_filename>
+                    <asset_name>Media\ChainKnights_Armor_LightLeather_3</asset_name>
+                    <Origin>
+                        <X>400</X>
+                        <Y>453</Y>
+                    </Origin>
+                </Item>
+                <Item xsi:type="TextureItem" Name="t_head" Visible="true">
+                    <Position>
+                        <X>8</X>
+                        <Y>-300</Y>
                     </Position>
                     <CustomProperties>
                         <Property Name="Body" Type="Item" Description="">b_body</Property>
@@ -98,8 +202,8 @@
             <Items>
                 <Item xsi:type="CircleItem" Name="b_body" Visible="true">
                     <Position>
-                        <X>0</X>
-                        <Y>0</Y>
+                        <X>-5</X>
+                        <Y>30</Y>
                     </Position>
                     <CustomProperties />
                     <Radius>267.0749</Radius>
@@ -121,8 +225,8 @@
             <Items>
                 <Item xsi:type="CircleItem" Name="g_torso" Visible="true">
                     <Position>
-                        <X>2</X>
-                        <Y>10</Y>
+                        <X>-5</X>
+                        <Y>30</Y>
                     </Position>
                     <CustomProperties>
                         <Property Name="Body" Type="Item" Description="">b_body</Property>
@@ -181,11 +285,11 @@
     </Layers>
     <CustomProperties />
     <EditorRelated>
-        <NextItemNumber>91</NextItemNumber>
+        <NextItemNumber>100</NextItemNumber>
         <ContentRootFolder>C:\chainknights\chainknights\Content</ContentRootFolder>
         <CameraPosition>
-            <X>91.66685</X>
-            <Y>625.0013</Y>
+            <X>16.66669</X>
+            <Y>33.3334045</Y>
         </CameraPosition>
     </EditorRelated>
 </Level>

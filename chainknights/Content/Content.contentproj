@@ -96,6 +96,145 @@
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Media\ChainKnights_LegsWalking01_FULL.png">
+      <Name>ChainKnights_LegsWalking01_FULL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_LegsWalking02_FULL.png">
+      <Name>ChainKnights_LegsWalking02_FULL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_LegsWalking03_FULL.png">
+      <Name>ChainKnights_LegsWalking03_FULL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Media\ChainKnights_Armor_HeavyLeather_1.png">
+      <Name>ChainKnights_Armor_HeavyLeather_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_HeavyLeather_2.png">
+      <Name>ChainKnights_Armor_HeavyLeather_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_HeavyLeather_3.png">
+      <Name>ChainKnights_Armor_HeavyLeather_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_HeavyLeather_4.png">
+      <Name>ChainKnights_Armor_HeavyLeather_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_HeavySteampunk_1.png">
+      <Name>ChainKnights_Armor_HeavySteampunk_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_HeavySteampunk_2.png">
+      <Name>ChainKnights_Armor_HeavySteampunk_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_HeavySteampunk_3.png">
+      <Name>ChainKnights_Armor_HeavySteampunk_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_HeavySteampunk_4.png">
+      <Name>ChainKnights_Armor_HeavySteampunk_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_LeatherSteampunk_1.png">
+      <Name>ChainKnights_Armor_LeatherSteampunk_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_LeatherSteampunk_2.png">
+      <Name>ChainKnights_Armor_LeatherSteampunk_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_LeatherSteampunk_3.png">
+      <Name>ChainKnights_Armor_LeatherSteampunk_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_LeatherSteampunk_4.png">
+      <Name>ChainKnights_Armor_LeatherSteampunk_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_LightLeather_1.png">
+      <Name>ChainKnights_Armor_LightLeather_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_LightLeather_2.png">
+      <Name>ChainKnights_Armor_LightLeather_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_LightLeather_3.png">
+      <Name>ChainKnights_Armor_LightLeather_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_LightLeather_4.png">
+      <Name>ChainKnights_Armor_LightLeather_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_SpikedMetal_1.png">
+      <Name>ChainKnights_Armor_SpikedMetal_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_SpikedMetal_2.png">
+      <Name>ChainKnights_Armor_SpikedMetal_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_SpikedMetal_3.png">
+      <Name>ChainKnights_Armor_SpikedMetal_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_SpikedMetal_4.png">
+      <Name>ChainKnights_Armor_SpikedMetal_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_StuddedLeather_1.png">
+      <Name>ChainKnights_Armor_StuddedLeather_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_StuddedLeather_2.png">
+      <Name>ChainKnights_Armor_StuddedLeather_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_StuddedLeather_3.png">
+      <Name>ChainKnights_Armor_StuddedLeather_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Media\ChainKnights_Armor_StuddedLeather_4.png">
+      <Name>ChainKnights_Armor_StuddedLeather_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
