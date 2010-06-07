@@ -29,6 +29,9 @@ namespace chainknights
         Texture2D TextureLeaping;
         Texture2D TextureStanding;
         Texture2D TextureSquatting;
+        Texture2D TextureWalking1;
+        Texture2D TextureWalking2;
+        Texture2D TextureWalking3;
 
         Body BodyTorso;
 
@@ -41,15 +44,20 @@ namespace chainknights
         {
             Standing,
             Squatting,
-            Leaping
+            Leaping,
+            Walking1,
+            Walking2,
+            Walking3
         }
         LegStates LegStateOld = LegStates.Standing;
         LegStates LegState = LegStates.Standing;
 
         bool IsGrounded = false;
         bool IsLandable = true;
+        bool IsWalking = false;
 
         Timer timerLandable;
+        Timer timerWalking;
 
         public Keys KeyUp = Keys.W;
         public Keys KeyLeft = Keys.A;
@@ -70,6 +78,10 @@ namespace chainknights
             timerLandable = new Timer();
             timerLandable.Interval = 50;
             timerLandable.Elapsed += new ElapsedEventHandler(timerLandable_Elapsed);
+
+            timerWalking = new Timer();
+            timerWalking.Interval = 150;
+            timerWalking.Elapsed += new ElapsedEventHandler(timerWalking_Elapsed);
         }
 
         public void LoadContent(PhysicsSimulator physicsSimulator, ContentManager content)
@@ -95,6 +107,20 @@ namespace chainknights
             TextureLeaping = content.Load<Texture2D>("Media/ChainKnights_LegsLeaping_Full");
             TextureStanding = content.Load<Texture2D>("Media/ChainKnights_LegsStanding_Full");
             TextureSquatting = content.Load<Texture2D>("Media/ChainKnights_LegsSquatting_Full");
+            TextureWalking1 = content.Load<Texture2D>("Media/ChainKnights_LegsWalking01_Full");
+            TextureWalking2 = content.Load<Texture2D>("Media/ChainKnights_LegsWalking02_Full");
+            TextureWalking3 = content.Load<Texture2D>("Media/ChainKnights_LegsWalking03_Full");
+        }
+
+        void timerWalking_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            if (IsGrounded)
+            {
+                if (LegState == LegStates.Walking1) LegState = LegStates.Walking2;
+                else if (LegState == LegStates.Walking2) LegState = LegStates.Walking3;
+                else if (LegState == LegStates.Walking3) LegState = LegStates.Walking1;
+                else LegState = LegStates.Walking1;
+            }
         }
 
         void timerLandable_Elapsed(object sender, ElapsedEventArgs e)
@@ -109,7 +135,7 @@ namespace chainknights
 
             IsGrounded = true;
 
-            if (geom1 == GeomLegsStanding && IsLandable)
+            if (geom1 == GeomLegsStanding && IsLandable && !IsWalking)
             {
                 LegState = LegStates.Standing;
             }
@@ -158,7 +184,7 @@ namespace chainknights
                 {
                     Jump();
                 }
-                else if (input.CurrentKeyboardState.IsKeyDown(KeyDown) && input.LastKeyboardState.IsKeyUp(KeyDown))
+                else if (input.CurrentKeyboardState.IsKeyDown(KeyDown))
                 {
                     Squat();
                 }
@@ -169,14 +195,22 @@ namespace chainknights
 
                 if (input.CurrentKeyboardState.IsKeyDown(KeyLeft))
                 {
+                    IsWalking = true;
+                    timerWalking.Start();
                     BodyTorso.ApplyForce(Tangent * WalkForce * -1);
-                    Hop();
                 }
-                if (input.CurrentKeyboardState.IsKeyDown(KeyRight))
+                else if (input.CurrentKeyboardState.IsKeyDown(KeyRight))
                 {
+                    IsWalking = true;
+                    timerWalking.Start();
                     BodyTorso.ApplyForce(Tangent * WalkForce);
-                    Hop();
                 }
+                else
+                {
+                    IsWalking = false;
+                    timerWalking.Stop();
+                }
+
             }
             else
             {
@@ -218,8 +252,17 @@ namespace chainknights
                     case LegStates.Leaping:
                         SpriteLeg.Texture = TextureLeaping;
                         break;
+                    case LegStates.Walking1:
+                        SpriteLeg.Texture = TextureWalking1;
+                        break;
+                    case LegStates.Walking2:
+                        SpriteLeg.Texture = TextureWalking2;
+                        break;
+                    case LegStates.Walking3:
+                        SpriteLeg.Texture = TextureWalking3;
+                        break;
                     default:
-                        SpriteLeg.Texture = TextureStanding;
+                        //SpriteLeg.Texture = TextureStanding;
                         break;
                 }
             }
