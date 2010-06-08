@@ -151,6 +151,7 @@ namespace chainknights
         public void Squat()
         {
             LegState = LegStates.Squatting;
+            BodyTorso.ApplyForce(Normal * JumpForce);
             physicsSimulator.Remove(GeomLegsStanding);
         }
 
@@ -184,7 +185,7 @@ namespace chainknights
                 {
                     Jump();
                 }
-                else if (input.CurrentKeyboardState.IsKeyDown(KeyDown))
+                else if (input.CurrentKeyboardState.IsKeyDown(KeyDown) && input.LastKeyboardState.IsKeyUp(KeyDown))
                 {
                     Squat();
                 }
@@ -262,7 +263,6 @@ namespace chainknights
                         SpriteLeg.Texture = TextureWalking3;
                         break;
                     default:
-                        //SpriteLeg.Texture = TextureStanding;
                         break;
                 }
             }
