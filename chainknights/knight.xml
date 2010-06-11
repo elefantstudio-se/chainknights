@@ -61,7 +61,7 @@
                         <Y>0</Y>
                     </Position>
                     <CustomProperties>
-                        <Property Name="Body" Type="Item" Description="">b_body</Property>
+                        <Property Name="Body" Type="Item" Description="">b_bottomright</Property>
                     </CustomProperties>
                     <Rotation>0</Rotation>
                     <Scale>1</Scale>
@@ -87,7 +87,7 @@
                         <Y>0</Y>
                     </Position>
                     <CustomProperties>
-                        <Property Name="Body" Type="Item" Description="">b_body</Property>
+                        <Property Name="Body" Type="Item" Description="">b_bottomleft</Property>
                     </CustomProperties>
                     <Rotation>0</Rotation>
                     <Scale>1</Scale>
@@ -113,7 +113,7 @@
                         <Y>0</Y>
                     </Position>
                     <CustomProperties>
-                        <Property Name="Body" Type="Item" Description="">b_body</Property>
+                        <Property Name="Body" Type="Item" Description="">b_topleft</Property>
                     </CustomProperties>
                     <Rotation>0</Rotation>
                     <Scale>1</Scale>
@@ -139,7 +139,7 @@
                         <Y>0</Y>
                     </Position>
                     <CustomProperties>
-                        <Property Name="Body" Type="Item" Description="">b_body</Property>
+                        <Property Name="Body" Type="Item" Description="">b_topright</Property>
                     </CustomProperties>
                     <Rotation>0</Rotation>
                     <Scale>1</Scale>
@@ -165,7 +165,7 @@
                         <Y>-300</Y>
                     </Position>
                     <CustomProperties>
-                        <Property Name="Body" Type="Item" Description="">b_body</Property>
+                        <Property Name="Body" Type="Item" Description="">b_head</Property>
                     </CustomProperties>
                     <Rotation>0</Rotation>
                     <Scale>1</Scale>
@@ -201,6 +201,9 @@
                     <CustomProperties>
                         <Property Name="Body1" Type="Item" Description="">b_body</Property>
                         <Property Name="Body2" Type="Item" Description="">b_topleft</Property>
+                        <Property Name="Type" Type="string" Description="">
+                            <string>Static</string>
+                        </Property>
                     </CustomProperties>
                     <Radius>35.77709</Radius>
                     <FillColor>
@@ -219,6 +222,9 @@
                     <CustomProperties>
                         <Property Name="Body1" Type="Item" Description="">b_body</Property>
                         <Property Name="Body2" Type="Item" Description="">b_topright</Property>
+                        <Property Name="Type" Type="string" Description="">
+                            <string>Static</string>
+                        </Property>
                     </CustomProperties>
                     <Radius>35.77709</Radius>
                     <FillColor>
@@ -237,6 +243,9 @@
                     <CustomProperties>
                         <Property Name="Body1" Type="Item" Description="">b_body</Property>
                         <Property Name="Body2" Type="Item" Description="">b_bottomright</Property>
+                        <Property Name="Type" Type="string" Description="">
+                            <string>Static</string>
+                        </Property>
                     </CustomProperties>
                     <Radius>35.77709</Radius>
                     <FillColor>
@@ -255,6 +264,9 @@
                     <CustomProperties>
                         <Property Name="Body1" Type="Item" Description="">b_body</Property>
                         <Property Name="Body2" Type="Item" Description="">b_bottomleft</Property>
+                        <Property Name="Type" Type="string" Description="">
+                            <string>Static</string>
+                        </Property>
                     </CustomProperties>
                     <Radius>35.77709</Radius>
                     <FillColor>
@@ -272,7 +284,10 @@
                     </Position>
                     <CustomProperties>
                         <Property Name="Body1" Type="Item" Description="">b_body</Property>
-                        <Property Name="Body2" Type="Item" Description="">b_topleft</Property>
+                        <Property Name="Body2" Type="Item" Description="">b_head</Property>
+                        <Property Name="Type" Type="string" Description="">
+                            <string>Static</string>
+                        </Property>
                     </CustomProperties>
                     <Radius>35.77709</Radius>
                     <FillColor>
