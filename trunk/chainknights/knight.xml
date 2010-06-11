@@ -328,7 +328,7 @@
                     </Position>
                     <CustomProperties>
                         <Property Name="Mass" Type="string" Description="">
-                            <string>.01</string>
+                            <string>.1</string>
                         </Property>
                     </CustomProperties>
                     <Radius>142.772552</Radius>
@@ -347,7 +347,7 @@
                     </Position>
                     <CustomProperties>
                         <Property Name="Mass" Type="string" Description="">
-                            <string>.01</string>
+                            <string>.1</string>
                         </Property>
                     </CustomProperties>
                     <Radius>142.772552</Radius>
@@ -366,7 +366,7 @@
                     </Position>
                     <CustomProperties>
                         <Property Name="Mass" Type="string" Description="">
-                            <string>.01</string>
+                            <string>.1</string>
                         </Property>
                     </CustomProperties>
                     <Radius>142.772552</Radius>
@@ -385,7 +385,7 @@
                     </Position>
                     <CustomProperties>
                         <Property Name="Mass" Type="string" Description="">
-                            <string>.01</string>
+                            <string>.1</string>
                         </Property>
                     </CustomProperties>
                     <Radius>142.772552</Radius>
@@ -404,7 +404,7 @@
                     </Position>
                     <CustomProperties>
                         <Property Name="Mass" Type="string" Description="">
-                            <string>.01</string>
+                            <string>.1</string>
                         </Property>
                     </CustomProperties>
                     <Radius>142.772552</Radius>
