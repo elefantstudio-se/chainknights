@@ -222,7 +222,8 @@ namespace Common
                         switch (strType)
                         {
                             case "Static":
-                                joint = JointFactory.Instance.CreateAngleJoint(physicsSimulator, body1, body2);
+                                //joint = JointFactory.Instance.CreateAngleJoint(physicsSimulator, body1, body2);
+                                joint = JointFactory.Instance.CreateAngleLimitJoint(physicsSimulator, body1, body2, -.01f, .01f);
                                 JointFactory.Instance.CreateRevoluteJoint(physicsSimulator, body1, body2, item.Position);
                                 break;
                             case "Slider":
