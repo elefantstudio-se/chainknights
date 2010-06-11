@@ -192,7 +192,98 @@
             </ScrollSpeed>
         </Layer>
         <Layer Name="Joints" Visible="true">
-            <Items />
+            <Items>
+                <Item xsi:type="CircleItem" Name="j_topleft" Visible="true">
+                    <Position>
+                        <X>-5</X>
+                        <Y>30</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body1" Type="Item" Description="">b_body</Property>
+                        <Property Name="Body2" Type="Item" Description="">b_topleft</Property>
+                    </CustomProperties>
+                    <Radius>35.77709</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+                <Item xsi:type="CircleItem" Name="j_topright" Visible="true">
+                    <Position>
+                        <X>-5</X>
+                        <Y>30</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body1" Type="Item" Description="">b_body</Property>
+                        <Property Name="Body2" Type="Item" Description="">b_topright</Property>
+                    </CustomProperties>
+                    <Radius>35.77709</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+                <Item xsi:type="CircleItem" Name="j_bottomright" Visible="true">
+                    <Position>
+                        <X>-5</X>
+                        <Y>30</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body1" Type="Item" Description="">b_body</Property>
+                        <Property Name="Body2" Type="Item" Description="">b_bottomright</Property>
+                    </CustomProperties>
+                    <Radius>35.77709</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+                <Item xsi:type="CircleItem" Name="j_bottomleft" Visible="true">
+                    <Position>
+                        <X>-5</X>
+                        <Y>30</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body1" Type="Item" Description="">b_body</Property>
+                        <Property Name="Body2" Type="Item" Description="">b_bottomleft</Property>
+                    </CustomProperties>
+                    <Radius>35.77709</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+                <Item xsi:type="CircleItem" Name="j_head" Visible="true">
+                    <Position>
+                        <X>-5</X>
+                        <Y>30</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body1" Type="Item" Description="">b_body</Property>
+                        <Property Name="Body2" Type="Item" Description="">b_topleft</Property>
+                    </CustomProperties>
+                    <Radius>35.77709</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+            </Items>
             <ScrollSpeed>
                 <X>1</X>
                 <Y>1</Y>
@@ -207,6 +298,101 @@
                     </Position>
                     <CustomProperties />
                     <Radius>267.0749</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+                <Item xsi:type="CircleItem" Name="b_topleft" Visible="true">
+                    <Position>
+                        <X>-145</X>
+                        <Y>-71</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Mass" Type="string" Description="">
+                            <string>.01</string>
+                        </Property>
+                    </CustomProperties>
+                    <Radius>142.772552</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+                <Item xsi:type="CircleItem" Name="b_topright" Visible="true">
+                    <Position>
+                        <X>143</X>
+                        <Y>-59</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Mass" Type="string" Description="">
+                            <string>.01</string>
+                        </Property>
+                    </CustomProperties>
+                    <Radius>142.772552</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+                <Item xsi:type="CircleItem" Name="b_bottomright" Visible="true">
+                    <Position>
+                        <X>147</X>
+                        <Y>173</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Mass" Type="string" Description="">
+                            <string>.01</string>
+                        </Property>
+                    </CustomProperties>
+                    <Radius>142.772552</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+                <Item xsi:type="CircleItem" Name="b_bottomleft" Visible="true">
+                    <Position>
+                        <X>-129</X>
+                        <Y>173</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Mass" Type="string" Description="">
+                            <string>.01</string>
+                        </Property>
+                    </CustomProperties>
+                    <Radius>142.772552</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+                <Item xsi:type="CircleItem" Name="b_head" Visible="true">
+                    <Position>
+                        <X>11</X>
+                        <Y>-275</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Mass" Type="string" Description="">
+                            <string>.01</string>
+                        </Property>
+                    </CustomProperties>
+                    <Radius>142.772552</Radius>
                     <FillColor>
                         <R>192</R>
                         <G>0</G>
@@ -276,6 +462,91 @@
                         <PackedValue>2445279424</PackedValue>
                     </FillColor>
                 </Item>
+                <Item xsi:type="CircleItem" Name="g_topleft" Visible="true">
+                    <Position>
+                        <X>-145</X>
+                        <Y>-71</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body" Type="Item" Description="">b_topleft</Property>
+                    </CustomProperties>
+                    <Radius>142.772552</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+                <Item xsi:type="CircleItem" Name="g_topright" Visible="true">
+                    <Position>
+                        <X>143</X>
+                        <Y>-59</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body" Type="Item" Description="">b_topright</Property>
+                    </CustomProperties>
+                    <Radius>142.772552</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+                <Item xsi:type="CircleItem" Name="g_bottomright" Visible="true">
+                    <Position>
+                        <X>147</X>
+                        <Y>173</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body" Type="Item" Description="">b_bottomright</Property>
+                    </CustomProperties>
+                    <Radius>142.772552</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+                <Item xsi:type="CircleItem" Name="g_bottomleft" Visible="true">
+                    <Position>
+                        <X>-129</X>
+                        <Y>173</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body" Type="Item" Description="">b_bottomleft</Property>
+                    </CustomProperties>
+                    <Radius>142.772552</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
+                <Item xsi:type="CircleItem" Name="g_head" Visible="true">
+                    <Position>
+                        <X>15</X>
+                        <Y>-275</Y>
+                    </Position>
+                    <CustomProperties>
+                        <Property Name="Body" Type="Item" Description="">b_head</Property>
+                    </CustomProperties>
+                    <Radius>142.772552</Radius>
+                    <FillColor>
+                        <R>192</R>
+                        <G>0</G>
+                        <B>192</B>
+                        <A>145</A>
+                        <PackedValue>2445279424</PackedValue>
+                    </FillColor>
+                </Item>
             </Items>
             <ScrollSpeed>
                 <X>1</X>
@@ -285,11 +556,11 @@
     </Layers>
     <CustomProperties />
     <EditorRelated>
-        <NextItemNumber>100</NextItemNumber>
+        <NextItemNumber>126</NextItemNumber>
         <ContentRootFolder>C:\chainknights\chainknights\Content</ContentRootFolder>
         <CameraPosition>
-            <X>16.66669</X>
-            <Y>33.3334045</Y>
+            <X>-593</X>
+            <Y>93</Y>
         </CameraPosition>
     </EditorRelated>
 </Level>
